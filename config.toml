@@ -1,0 +1,38 @@
+baseURL = "https://cvno1.github.io"
+title = "小陈的 blog"
+theme = "etch"
+languageCode = "en-US"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+description = ""
+copyright = "Copyright © 2022 Chen Chi"
+dark = "auto"
+highlight = true
+
+[menu]
+[[menu.main]]
+name = 'algo'
+url = '/algo/'
+weight = -20
+
+[[menu.main]]
+name = 'go'
+url = '/go/'
+weight = -20
+
+[[menu.main]]
+identifier = "about"
+name = "about"
+title = "about"
+url = "/about/"
+weight = 20
+
+[permalinks]
+posts = "/:title/"
+
+[markup.goldmark.renderer]
+# Allows HTML in Markdown
+unsafe = true
